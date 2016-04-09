@@ -1,8 +1,8 @@
 require 'yelp'
 
 Yelp.client.configure do |config|
-  config.consumer_key = ENV['CONSUMER_KEY']
-  config.consumer_secret = ENV['CONSUMER_SECRET']
-  config.token = ENV['TOKEN']
-  config.token_secret = ENV['TOKEN_SECRET']
+  config.consumer_key = ENV['consumer_key']
+  config.consumer_secret = ENV['consumer_secret']
+  config.token = ENV['token']
+  config.token_secret = ENV['token_secret']
 end
