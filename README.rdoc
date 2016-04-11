@@ -2,9 +2,15 @@
 
 A project that helps hungry customers choose where to eat: visually.
 
+Process:
+* Choose your type of diet
+* Choose a picture that strikes you (pictured carousel)
+	- Accomodates diet, open now, within 10 mile radius sorted by rating and distance
+* View the restaurant information that serves it
+* Try again (goes to other pictures)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+
+This README would normally document whatever steps are necessary to get the application up and running.
 
 Things you may want to cover:
 

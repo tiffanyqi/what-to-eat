@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  root 'home#index'
+  root 'food#index'
+  match 'food/search' => 'food#search', as: :food_search, via: [:get, :post]
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
