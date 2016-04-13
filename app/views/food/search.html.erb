@@ -1,7 +1,7 @@
+<%= @random_category %>
 <% @businesses.keys.each do |business| %>
-  <p><%= business.name %></p>
-  <p><%= business.url %></p>
-
+  <p><%= link_to business.name, business.url %></p>
 <% end %>
+<%= @categories %>
 
 
