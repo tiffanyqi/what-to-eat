@@ -6,7 +6,15 @@ class FoodController < ApplicationController
   def search
     @diet = params[:diet]
     # @location = params[:location]
-    render json: Yelp.client.search('Berkeley', {term: @diet})
+    data = Yelp.client.search('Berkeley', {term: @diet})
+    @businesses = Hash.new
+    data.businesses.each do |business|
+      @businesses[business] = []
+      @businesses[business].push(business.name)
+      @businesses[business].push(business.url)
+      @businesses[business].push(business.categories)
+      @businesses[business].push(business.location)
+    end
   end
 
 end
